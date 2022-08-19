@@ -58,8 +58,14 @@
     "extraEnv": {
       "type": "string"
     },
+    "extraEnvYaml": {
+      "type": "array"
+    },
     "extraEnvFrom": {
       "type": "string"
+    },
+    "extraEnvFromYaml": {
+      "type": "array"
     },
     "extraInitContainers": {
       "type": "string"

@@ -104,9 +104,15 @@ spec:
             {{- with .Values.extraEnv }}
             {{- tpl . $ | nindent 12 }}
             {{- end }}
+            {{- with .Values.extraEnvYaml }}
+            {{- toYaml . | nindent 12 }}
+            {{- end }}
           envFrom:
             {{- with .Values.extraEnvFrom }}
             {{- tpl . $ | nindent 12 }}
+            {{- end }}
+            {{- with .Values.extraEnvFromYaml }}
+            {{- toYaml . | nindent 12 }}
             {{- end }}
           ports:
             - name: http
