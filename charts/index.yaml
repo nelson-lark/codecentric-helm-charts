@@ -3,7 +3,40 @@ entries:
   keycloak:
   - apiVersion: v2
     appVersion: 17.0.1-legacy
-    created: "2022-08-20T04:33:47.941748-07:00"
+    created: "2022-08-20T06:14:40.030666-07:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.2
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
+    digest: c92688eaa4785f1b8ecab081ac5da7ad689d724e660a6eefc276ba6a1d684634
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_icon_512px.svg
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - ldap
+    maintainers:
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    - email: thomas.darimont+github@gmail.com
+      name: thomasdarimont
+    name: keycloak
+    sources:
+    - https://github.com/codecentric/helm-charts
+    - https://github.com/jboss-dockerfiles/keycloak
+    - https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    urls:
+    - keycloak-18.3.1.tgz
+    version: 18.3.1
+  - apiVersion: v2
+    appVersion: 17.0.1-legacy
+    created: "2022-08-20T06:14:40.025193-07:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -34,4 +67,4 @@ entries:
     urls:
     - keycloak-18.3.0.tgz
     version: 18.3.0
-generated: "2022-08-20T04:33:47.932477-07:00"
+generated: "2022-08-20T06:14:40.017588-07:00"

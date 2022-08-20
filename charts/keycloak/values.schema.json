@@ -164,6 +164,9 @@
       "livenessProbe": {
         "type": "string"
       },
+      "livenessProbeYaml": {
+        "type": "object"
+      },
       "nameOverride": {
         "type": "string"
       },
@@ -240,6 +243,9 @@
       },
       "readinessProbe": {
         "type": "string"
+      },
+      "readinessProbeYaml": {
+        "type": "object"
       },
       "replicas": {
         "type": "integer"
@@ -389,6 +395,9 @@
         }
       },
       "startupScripts": {
+        "type": "object"
+      },
+      "startupProbeYaml": {
         "type": "object"
       },
       "statefulsetAnnotations": {
